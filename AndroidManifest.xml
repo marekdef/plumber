@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.mobilla.plumber"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:label="@string/app_name"
+        android:largeHeap="false" >
+        <activity
+            android:name="pl.mobilla.plumber.StringsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="pl.mobilla.plumber.PlumberActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="pl.mobilla.plumber.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pl.mobilla.plumber.LeakByThread"
+            android:label="@string/title_activity_plumber_leak_by_thread" >
+        </activity>
+        <activity
+            android:name="pl.mobilla.plumber.LeakByHandler"
+            android:label="@string/title_activity_plumber_leak_by_handler" >
+        </activity>
+        <activity
+            android:name="pl.mobilla.plumber.LeakByStatic"
+            android:label="@string/title_activity_plumber_leak_by_static" >
+        </activity>
+        <activity
+            android:name="pl.mobilla.plumber.LeakByDrawable"
+            android:label="@string/title_activity_leak_by_drawable" >
+        </activity>
+    </application>
+
+</manifest>
